@@ -1,0 +1,19 @@
+<script>
+class Videoclub {
+    constructor(title = '', rented = false) {
+        this.title = title;
+        this.rented = rented;
+        this.time = 0;
+    }
+}
+
+const person1 = new Videoclub('The mummy', true);
+
+person1.rentedTime = function(value) {
+    this.time = value;
+};
+
+person1.rentedTime(2);
+
+console.log(person1); // rented: true, rentedTime: ƒ (value), time: 2, title: "The mummy"
+</script>
